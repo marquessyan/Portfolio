@@ -11,22 +11,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="home">
-      <h1>Yan Marques Soares</h1>
-      <h2>Bacharelado em Ciências da Computação</h2>
-    </header>
-    <nav>
-      <a href="#home">Home</a> <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <div id="home">
+      <header class="flex-home-filho">
+        <h1>Yan Marques Soares</h1>
+        <h2>Bacharelado em Ciências da Computação</h2>
+      </header>
+      <nav class="flex-home-filho">
+        <a href="#home">Home</a> <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
     <main>
       <article>
-        <section>
+        <section id="#sobre">
           <h3>Sobre Mim:</h3>
           <p>
             Eu tenho enorme interesse na area de
             <strong>Tecnologia e Informação</strong>, procurando sempre abranger
-            meu conhecimento sobre. Atualmente curso meu primeiro semestre de
+            meu conhecimento sobre. Atualmente, curso meu primeiro semestre de
             Ciências da Computação na <strong>Unijorge</strong>, possuo ampla
             disposição pro trabalho em equipe, pensamento crítico, resolução de
             problemas, conhecimento básico de inglês e correlacionados.
@@ -35,9 +37,10 @@
             Meu objetivo é claro: criar soluções úteis por meio da criatividade.
           </p>
         </section>
+        <hr />
         <section>
           <h3>Formação Acadêmica:</h3>
-          <h4>Ciências da Computação</h4>
+          <p><b>Ciências da Computação</b></p>
           <p>
             Unijorge | Salvador | Fevereiro 2025 - Dezembro 2029 <br />
             <b>Status</b> - Cursando
@@ -68,7 +71,9 @@
       <div>Telefone: +55 71 98462-1982</div>
       <div>Rua Jayme Vieira Lima, 31</div>
       <div>Cep: 41235-000</div>
-      <p>Copyright © Yan Marques Soares, Todos os direitos reservados.</p>
+      <div class="copyright">
+        <p>Copyright © Yan Marques Soares, Todos os direitos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
