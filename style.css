@@ -5,6 +5,10 @@
   font-family: monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: forestgreen;
   color: white;
@@ -29,16 +33,16 @@ header > div {
 }
 
 header > div > div {
-  padding: 25px;
+  padding: 1.5em;
   text-align: center;
-  font-size: xx-large;
+  font-size: clamp(1rem, 3vw, 2rem);
 }
 
 nav {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  font-size: 32px;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   text-align: center;
 }
 
@@ -52,25 +56,25 @@ nav a:hover {
 }
 
 main {
-  margin: 50px;
+  margin: clamp(2rem, 4vw, 4rem);
 }
 
 article {
-  font-size: xx-large;
+  font-size: clamp(1rem, 5vw, 2rem);
   width: 75%;
 }
 
 article section {
-  margin: 50px 0px;
+  margin: clamp(2rem, 4vw, 4rem) 0px;
 }
 
 article h3 {
-  margin: 20px 15px;
-  font-size: 40px;
+  margin: 1.5rem 1.25rem;
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
 }
 
 article p {
-  margin: 25px 0px;
+  margin-bottom: 2rem;
 }
 
 article hr {
@@ -78,10 +82,18 @@ article hr {
   border-radius: 20px;
 }
 
+ul {
+  margin: 2rem 0 0 2rem;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+}
+
 footer {
   margin: 100px 0px 0px 0px;
   padding: 15px;
-  font-size: x-large;
+  font-size: clamp(0.75rem, 4vw, 1.75rem);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -101,7 +113,8 @@ footer .copyright {
   flex: 100%;
 }
 
-footer a {
+footer a,
+h4 a {
   text-decoration: underline;
 }
 
@@ -130,6 +143,12 @@ footer a {
   }
   article {
     width: 100%;
+  }
+  article hr {
+    border: 1px solid;
+  }
+  footer {
+    margin-top: 50px;
   }
 }
 
