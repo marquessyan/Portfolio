@@ -78,7 +78,7 @@ article p {
 }
 
 article hr {
-  border: 2px solid;
+  border: 2px solid white;
   color: white;
   border-radius: 20px;
 }
